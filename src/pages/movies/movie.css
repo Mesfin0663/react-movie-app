@@ -1,0 +1,43 @@
+.movie_container{
+   position: absolute;
+   top: 80%;
+}
+.movie_img{
+    width: 300px;
+    height: 300px;
+    
+}
+.movie_wrapper{
+    display: grid;
+  
+}
+.movie_card{
+    margin: 10px 10px;
+}
+
+
+@media only screen and (min-width: 600px) {
+    /* body {
+      background-color: lightblue;
+    } */
+    .movie_wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    /* body {
+      background-color: rgb(32, 128, 53);
+    } */
+  }
+
+  @media only screen and (min-width: 1000px) {
+    /* body {
+      background-color: rgb(128, 32, 32);
+    } */
+    .movie_wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
