@@ -47,8 +47,12 @@ function Movies() {
                             dataLength={movieList.length}
                             next={fetchData}
                             hasMore={true} // Replace with a condition based on your data source
-                            loader={<div style={{display:"flex", justifyContent:"center"}}>
+                            loader={<div style={{display:"block", justifyContent:"center",alignItems:"center"}}>
                                 <CircularProgress/>
+                                <div>
+                                {error && <p>Error: {error.message}</p>}
+                                </div>
+
                             </div>}
                             endMessage={<p>No more data to load.</p>}
                             style={{ overflowY: 'hidden' }}
@@ -78,7 +82,7 @@ function Movies() {
                                                 </div>
 
                         </InfiniteScroll>
-                        {error && <p>Error: {error.message}</p>}
+                      
           </div>
       }
 
