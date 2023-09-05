@@ -60,13 +60,18 @@ function Movies() {
                                 movieList.map((movie) => (
 
                                   <div className='movie_card'>
-                                  <h1 className='movie_title'>{movie.originalTitleText.text}</h1>
                                   <img className='movie_img' src={movie.primaryImage?.url} alt="" />
+                                  <div className='movie_detail'>
+
                                   <p className='movie_description'>{movie.releaseDate?.year}</p>
                                   {
                                     movie.titleType.isSeries?<>Series</>:<>Single</>
                                   }
-                                <a href="/single-movie"> <p className='movie_description'>{movie.id}</p></a>
+                                {/* <a href="/single-movie"> <p className='movie_description'>{movie.id}</p></a> */}
+                                {/* <p>125min</p> */}
+                                  </div>
+                                                                <h1 className='movie_title'>{movie.originalTitleText.text}</h1>
+
                                 </div>
                                 ))
                             }

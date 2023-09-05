@@ -5,8 +5,8 @@ import './App.css'
 import Movies from './pages/movies/Movies'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import SingleMovie from './pages/single-movie/SingleMovie'
-import Navbar from './components/sidebar/Navbar'
 import Header from './components/header/Header'
+import Navbar from './components/navbar/Navbar'
 function App() {
   const [count, setCount] = useState(0)
 

@@ -5,8 +5,41 @@
   box-sizing: border-box;
 }
 body{
-
   color: white;
-  background-color: black;
+  background: rgb(15, 29, 37);
   overflow-x: hidden;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-side{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.btn{
+  
+}
+.btn {
+  padding: 5px 10px;
+  background-color: #00ACC1;
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+  /* margin-left: 10px; */
+  border-radius: 10px;
+  border: none;
+}
+
+.mb{
+  margin-bottom: 10px;
+}
+.ml{
+  margin-left: 10px;
+}
+.mr{
+  margin-right: 10px;
 }
