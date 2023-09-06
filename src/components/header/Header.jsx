@@ -18,6 +18,7 @@ function Header() {
 
   return (
     <div className='header_container'>
+      <div className="header_overlay"></div>
       <div class="left">
         <ArrowBackIos onClick={prevSlide} />
       </div>

@@ -7,6 +7,7 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import SingleMovie from './pages/single-movie/SingleMovie'
 import Header from './components/header/Header'
 import Navbar from './components/navbar/Navbar'
+import Home from './pages/Home/Home'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -14,9 +15,8 @@ function App() {
     <>
       <BrowserRouter>
       <Navbar/>
-      <Header/>
          <Routes>
-            <Route path='/' element={<Movies/>}/>
+            <Route path='/' element={<Home/>}/>
             <Route path='/single-movie' element={<SingleMovie/>}/>
              
          </Routes> 
